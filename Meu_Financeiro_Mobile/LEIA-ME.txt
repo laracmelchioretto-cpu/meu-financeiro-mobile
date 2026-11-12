@@ -1,0 +1,21 @@
+MEU FINANCEIRO MOBILE — ETAPA INICIAL
+
+Este pacote contém uma PWA estática com armazenamento IndexedDB, lançamentos,
+resumo financeiro e exportação/importação JSON. Não sincroniza com a versão
+Windows, não possui cartões, recorrências ou CDBs. Use somente dados fictícios.
+
+INSTALAÇÃO NO IPHONE:
+1. Publique os quatro arquivos index.html, manifest.webmanifest, icon.svg e sw.js
+   juntos em uma hospedagem estática HTTPS (por exemplo, GitHub Pages).
+2. Abra o endereço HTTPS no Safari do iPhone.
+3. Compartilhar > Adicionar à Tela de Início.
+4. Abra pelo ícone e teste com dados fictícios: cadastre, feche e reabra.
+5. Exporte backups regularmente pelo menu Backup.
+
+ATENÇÃO: abrir index.html diretamente pelo app Arquivos NÃO é uma instalação
+PWA e pode não salvar os dados. O armazenamento do navegador pode ser apagado
+pelo iOS ou pelo usuário. Backups são essenciais.
+
+PRÓXIMA ETAPA: criar sincronização por registros com IDs globais, histórico
+de edições e exclusões, resolução de conflitos e integração com o banco SQLite
+Windows. NÃO importe os JSONs móveis diretamente no banco Windows.
